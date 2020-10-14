@@ -1,10 +1,14 @@
+@Library('jenkins-library@master') _
 pipeline {
     agent any
     stages { 
-        stage('SCM') {
+        stage('git checkout') {
            steps {
-            git 'https://github.com/srmanikanta/spring-petclinic.git'
-            }
+           checkoutSource(
+            branch: "master"
+            url: "https://github.com/srmanikanta/spring-petclinic.git"
+           ) 
+           }
         }
         
        stage('MVN CLEAN') {
