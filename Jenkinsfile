@@ -7,6 +7,7 @@ pipeline {
            checkoutSource(
             branch: "master",
             url: "https://github.com/srmanikanta/spring-petclinic.git"
+            credentialid: "mycredential-1"   
            ) 
            }
         }
