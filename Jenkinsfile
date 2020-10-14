@@ -1,4 +1,4 @@
-@Library('sonar@master') _
+@Library('sonar@main') _
 pipeline {
     agent any
     stages { 
