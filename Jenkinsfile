@@ -1,4 +1,4 @@
-@Library('jenkins-library@master') _
+@Library('sonar@master') _
 pipeline {
     agent any
     stages { 
